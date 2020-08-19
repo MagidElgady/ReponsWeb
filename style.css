@@ -115,13 +115,45 @@ header {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     border: none;
+    color: white;
+    /* Adds space between 14-inch and Add to Cart */
+    margin: 30px 30px 0px 30px;
 }
 
 .cover {
     flex: 1;
+    /* Adds slight shadow underneath laptop */
+    filter: drop-shadow(0px 5px 3px black);
 }
 
  /* Sets laptop image size */
  .cover img {
      height: 60vh ;
+ }
+
+ .big-circle {
+     position: absolute;
+     top: 0px;
+     right: 0px;
+     /* Moves circle behind laptop image */
+     z-index: -1;
+     opacity: 0.7;
+     height: 80%;
+ }
+
+ /* Moves medium-circle opposite
+ the medium circle */
+ .medium-circle {
+     position: absolute;
+     top: 30%;
+     right: 30%;
+     z-index: -1;
+     height: 60%;
+ }
+
+ .small-circle {
+     position: absolute;
+     bottom: 0%;
+     left: 20%;
+     z-index: -1;
  }
