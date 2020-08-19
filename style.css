@@ -55,7 +55,8 @@ header {
     text-decoration: underline;
 }
 
- .cart {
-     
+ .cart {   
      flex: 1;
+     /* Cart icon moved to right edge of page */
+     justify-content: flex-end;
  }
