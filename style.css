@@ -15,17 +15,47 @@ area is what */
 header {
     display: flex;
     width: 90%;
+    /* Header is taller in height */
+    height: 10vh;
     margin:auto;
+    /* Header is properly aligned */
+    align-items: center;
 }
 
+.logo-container, .nav-links, .cart {
+    display: flex;
+}
+
+
  .logo-container  {
-     background:blue);
+     /* Flex of 1 takes up all space in div class */
+     flex: 1;
  }
+
+.logo {
+    font-weight: 400;
+}
+
 
  nav {
-     background: rgb(230, 4, 4);
+     flex: 2;
  }
 
+ /* Removes bullet points
+ and spaces each URL link */
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+
+/* Removes underline */
+.nav-link {
+    color: #5f5f79;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
  .cart {
-     background: rgb(255, 0, 255);
+     
+     flex: 1;
  }
