@@ -14,8 +14,9 @@ button {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Helps with knowing what 
-area is what */
+/* Adding background colour
+helps to know which section 
+is what */
 header {
     display: flex;
     width: 90%;
