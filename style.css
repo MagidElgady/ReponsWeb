@@ -6,8 +6,26 @@ the other elements */
     box-sizing: border-box;
 }
 
-
-
 body {
    font-family: 'Poppins', sans-serif;
 }
+
+/* Helps with knowing what 
+area is what */
+header {
+    display: flex;
+    width: 90%;
+    margin:auto;
+}
+
+ .logo-container  {
+     background:blue);
+ }
+
+ nav {
+     background: rgb(230, 4, 4);
+ }
+
+ .cart {
+     background: rgb(255, 0, 255);
+ }
