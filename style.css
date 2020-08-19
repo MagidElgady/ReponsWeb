@@ -22,12 +22,14 @@ header {
     width: 90%;
     /* Header is taller in height */
     height: 10vh;
-    margin:auto;
+    margin: auto;
     /* Header is properly aligned */
     align-items: center;
 }
 
-.logo-container, .nav-links, .cart {
+.logo-container,
+ .nav-links,
+  .cart {
     display: flex;
 }
 
@@ -39,6 +41,7 @@ header {
 
 .logo {
     font-weight: 400;
+    margin: 5px;
 }
 
 
@@ -57,7 +60,7 @@ header {
 .nav-link {
     color: #5f5f79;
     font-size: 18px;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
  .cart {   
@@ -85,6 +88,7 @@ header {
     /* Affects colour of laptop description text */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 }
 
 .intro-text p {
@@ -100,11 +104,10 @@ header {
 .cta-select {
     border: 2px solid #c36cbb;
     background: transparent;
-    color:#c36cbb;
+    color: #c36cbb;
     width: 150px;
     height: 50px;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
 
@@ -113,27 +116,31 @@ header {
     width: 150px;
     height: 50px;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     border: none;
     color: white;
     /* Adds space between 14-inch and Add to Cart */
-    margin: 30px 30px 0px 30px;
+    margin: 30px 0px 0px 30px;
 }
 
 .cover {
     flex: 1;
-    /* Adds slight shadow underneath laptop */
-    filter: drop-shadow(0px 5px 3px black);
-    height: 60vh ;
+    display: flex;
+    height: 60vh;
+    /* Aligns laptop image with 
+    buttons */
+    justify-content: center;
+
 
 }
 
  /* Sets laptop image size */
  .cover img {
      height: 100%;
+    /* Adds slight shadow underneath laptop */
+    filter: drop-shadow(0px 5px 3px black);
      /* Animation time set 1.5 seconds */
-     animation: drop 1.5s;
+     animation: drop 1.5s ease;
  }
 
  .big-circle {
@@ -147,7 +154,7 @@ header {
  }
 
  /* Moves medium-circle opposite
- the medium circle */
+ the big circle */
  .medium-circle {
      position: absolute;
      top: 30%;
@@ -180,12 +187,12 @@ header {
     }
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0px);
     }
 }
 
 /* Makes site responsive on phones */
-@media screen and (max-width: 1024px) {
+@media screen and (max-height: 1024px) {
     .presentation {
         flex-direction: column;
     }
@@ -219,6 +226,6 @@ header {
     }
 }
 
-@media screen and (max-width: 360xp){
+@media screen and (max-width: 360px){
 
 }
